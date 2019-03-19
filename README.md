@@ -53,3 +53,49 @@ apply(this, [argsArray])
 bind(object you want to bind, arg)
 splice()
 </div>
+
+
+
+<h2> Day 2 </h2>
+
+<div>
+Primitive(number, string...) vs reference(object):
+  when b = a in object, it shares same memory
+  then, to copy a reference use: deepclone, ...operator
+  
+ a = null;
+ a;  is undefined
+ why use const rather than var? question.
+ 
+ <h3> JS advanced</h3>
+ Scopre: 
+ IIFE: immedate invoke function. only invoke once. when call only the return part invoke
+ 
+ 6 888 6 888 888
+ 
+ in arrow function this is decalre when declaration 
+ 
+ 
+ callback or promise for data getting. So it will get the data then process the rest
+ 
+ async/await new feature in js.
+ 
+ 
+ callback hell -> not readable not undestandable thats why use promise.
+ what is prototype? to use for inheritance. because js is not oop. 
+ 
+ CRUD
+ get -> read 
+ post -> create 
+ put -> update
+ delete -> d
+ 
+ <b>const and let</b> adavantage: fix scope problem
+ http is asynchro
+ understand http request in js 
+ 
+ Arrow function
+ functionname = (parm1, parm2 ..) => {}
+ 
+ 
+</div>
