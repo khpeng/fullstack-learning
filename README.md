@@ -118,6 +118,32 @@ Primitive(number, string...) vs reference(object):
   format of data, specify data type of each colum
   safer to manipulate data
   
-  
+  check or remove duplicate from existing table
 
+
+  view is virtual table which doesn't include actual data. we store query in view not data
+  why use view? query in it when created. user can acess the view but deny acess to the table
+  materialize view. (adv level
+  
+  insert into view 
+  multiple database. if insert into from different db will not work. enforce
+  trigger for view(later discuss
+  
+  
+  temp table in system db.
+  why use temp ?
+  do not want to change datasource, we use temp table.
+  Using a view will change data source.
+  view is not a table cannot have table property. but you can have it in temp table.
+  if there is one set of data always use it, first create but rest access. private data source, query fasater(temp table
+  
+  substring, replace in sql
+  <b>date/time </b>
+  
+  sample 1 records,  , dulipcate 25 25
+  
+  scalar function not much discuss
+  always have GO
+  constraint: 6 types: primary, foreign, unique, not null, check 
+  
 </div>
