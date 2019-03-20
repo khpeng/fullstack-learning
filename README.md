@@ -38,6 +38,14 @@ prompt, alert and confirm
 
 always put script in the end so it can find element (html excute line by line
 
+n keyword means uni-code varchar(ex: for other language 
+varchar is 2
+nvarchar is 4
+internal conversion: automatically if data type allow
+
+external conversion: manually
+
+
 switch stop when reaches break;
 pre increment vs post increment performance ?question
 
@@ -98,4 +106,18 @@ Primitive(number, string...) vs reference(object):
  functionname = (parm1, parm2 ..) => {}
  
  
+</div>
+
+
+<h3> Day 3</h3>
+<div> 
+  table have two page, sertion page
+  normailization redundency remove. 
+  easy to maniputlate 
+  
+  format of data, specify data type of each colum
+  safer to manipulate data
+  
+  
+
 </div>
