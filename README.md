@@ -1,65 +1,61 @@
 # fullstack-learning
 
+
 <h2> Day 1 </h2>
 
 <div>
-work flow -> project structure -> pkg used (read doc 
+<p> work flow -> project structure -> pkg used (read doc </p>
 
-head -> metadata
-!doctype html -> define html5 
+<p> head -> metadata</p>
+<p> "!doctype html -> define html5" </p>
+<p>alt -> img alternative text if img not shown</p>
+<p>disable -> for button, if condition not meet</p>
 
-alt -> img alternative text if img not shown
-disable -> for button, if condition not meet
-title -> display as tool tip
-DOM doc object model -> allows program and script to access and update content
-display none ->remove element from dom ex: toggle click button twice will not show
-visibility hidden ->not shown but would take place in dom
+<p>title -> display as tool tip</p>
+<p>DOM doc object model -> allows program and script to access and update content</p>
+<p>display none ->remove element from dom ex: toggle click button twice will not show</p>
+<p>visibility hidden ->not shown but would take place in dom</p>
 
-bagel to transpile es6 to es5
+<p>bagel to transpile es6 to es5</p>
 
-#a -> id selector
-.a  ->  class
-a  -> element
+<p>#a -> id selector</p>
+<p>.a  ->  class</p>
+<p>a  -> element
 
-responsive web design -> provide optimal viewing experience, resizing, panning, scroll
-bootstrap, media query 
+<p>responsive web design -> provide optimal viewing experience, resizing, panning, scroll </p>
+<p>bootstrap, media query </p>
 
-Media query
-@media only sceen and max-width ->  only less than xxx show 
+<p>Media query</p>
+<p>@media only sceen and max-width ->  only less than xxx show </p>
 
-JS -> Client side scripting language
-Use strict 
+<p>JS -> Client side scripting language</p>
+<p>Use strict </p>
 
-naming convention:
-usually remove  a,e,i,o,u
+<p>naming convention:</p>
+<p>usually remove  a,e,i,o,u</p>
 
-debugger; comon use break point
-prompt, alert and confirm
+<p>debugger; comon use break point</p>
+<p>prompt, alert and confirm</p>
 
-always put script in the end so it can find element (html excute line by line
-
-n keyword means uni-code varchar(ex: for other language 
-varchar is 2
-nvarchar is 4
-internal conversion: automatically if data type allow
-
-external conversion: manually
+<p>always put script in the end so it can find element (html excute line by line</p>
 
 
-switch stop when reaches break;
-pre increment vs post increment performance ?question
-
-do while < 5 will  1+2+3+4+5
-
-functiion expression vs declaration (hoisted)
-const vs let: cannot reassign const
 
 
-call, apply, bind
-call(this, arg1, arg2)
-apply(this, [argsArray])
-bind(object you want to bind, arg)
-splice()
+<p>switch stop when reaches break;</p>
+<p>pre increment vs post increment performance ?question</p>
+
+<p>do while < 5 will  1+2+3+4+5</p>
+
+<p>functiion expression vs declaration (hoisted)</p>
+<p>const vs let: cannot reassign const</p>
+
+
+<p>call, apply, bind</p>
+<p>call(this, arg1, arg2)</p>
+<p>apply(this, [argsArray])</p>
+<p>bind(object you want to bind, arg)</p>
+<p>splice()</p>
 </div>
 
 
@@ -115,6 +111,12 @@ Primitive(number, string...) vs reference(object):
   normailization redundency remove. 
   easy to maniputlate 
   
+<p>n keyword means uni-code varchar(ex: for other language </p>
+<p>varchar is 2</p>
+<p>nvarchar is 4</p>
+<p>internal conversion: automatically if data type allow</p>
+
+<p>external conversion: manually</p>
   format of data, specify data type of each colum
   safer to manipulate data
   
