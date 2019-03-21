@@ -415,10 +415,12 @@ Primitive(number, string...) vs reference(object):
     double = 8 bytes
     char = 2 bytes
     boolean: undefined.
+    primitive type store in stack
   </pre>
    <li> Derived data type </li>
    
    <pre>
+   reference and derive type store reference in heap but actual data in stack.
    Array, 
    </pre>
   </ul>
@@ -428,9 +430,13 @@ Primitive(number, string...) vs reference(object):
     naming variable: start with A-z or $ or _
     should not use pre-defined keywords
     
+    
    </pre>
   
-  
-  
-  
+   STATIC BINDING -> OVERLOADING
+   interface solve multiple inheritance sicne if a class and b class both have drive() and class c extends a,b then ambiguity to use drive() but interface have no behavior so will not confused.
+   
+   interface work as method classifier.
+   use interface to represent the class first and implement in other class
+   dependencies injection design pattern.
 </div>
