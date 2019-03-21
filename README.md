@@ -358,13 +358,14 @@ Primitive(number, string...) vs reference(object):
   
   
   temp table in system db.
-  <ul>
+  
   <h4>why use temp ?<h4>
+  <ul>
   <li>do not want to change datasource, we use temp table.</li>
   <li>Using a view will change data source.</li>
   <li>view is not a table cannot have table property. but you can have it in temp table.</li>
   <li>if there is one set of data always use it, first create but rest access. private data source, query fasater(temp table</li>
-  
+  </ul>
   <b>substring, replace</b> in sql
   <b>date/time </b>
   
@@ -420,6 +421,7 @@ Primitive(number, string...) vs reference(object):
    <pre>
    Array, 
    </pre>
+  </ul>
   
    <h4>Rule for decalre identifier</h4>
    <pre> 
@@ -427,7 +429,7 @@ Primitive(number, string...) vs reference(object):
     should not use pre-defined keywords
     
    </pre>
-  </ul>
+  
   
   
   
