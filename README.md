@@ -1,45 +1,51 @@
 # fullstack-learning
 
 
-<h2> Day 1 </h2>
+<h2> Day 1 JS/CSS </h2>
 
 <div>
 <p> work flow -> project structure -> pkg used (read doc </p>
 
+<h4>Html tags and CSS properties<h4>
+<pre> 
 <p> head -> metadata</p>
 <p> "!doctype html -> define html5" </p>
 <p>alt -> img alternative text if img not shown</p>
 <p>disable -> for button, if condition not meet</p>
-
 <p>title -> display as tool tip</p>
-<p>DOM doc object model -> allows program and script to access and update content</p>
+<p>DOM -> doc object model -> allows program and script to access and update content</p>
 <p>display none ->remove element from dom ex: toggle click button twice will not show</p>
 <p>visibility hidden ->not shown but would take place in dom</p>
-
 <p>bagel to transpile es6 to es5</p>
-
 <p>#a -> id selector</p>
 <p>.a  ->  class</p>
 <p>a  -> element
-
-<p>responsive web design -> provide optimal viewing experience, resizing, panning, scroll </p>
-<p>bootstrap, media query </p>
-
 <p>Media query</p>
 <p>@media only sceen and max-width ->  only less than xxx show </p>
+</pre>
 
+<h4> Concept</h4>
+<pre>
+<p>responsive web design -> provide optimal viewing experience, resizing, panning, scroll </p>
+<p>get to know bootstrap, media query </p>
+</pre>
+
+
+
+
+<h4> JS concept</h4>
+<pre>
 <p>JS -> Client side scripting language</p>
 <p>Use strict </p>
-
 <p>naming convention:</p>
 <p>usually remove  a,e,i,o,u</p>
+<p> put script in the end so it can find element (html excute line by line</p>
+</pre>
 
+<h4> JS function</h4>
+<pre>
 <p>debugger; comon use break point</p>
 <p>prompt, alert and confirm</p>
-
-<p>always put script in the end so it can find element (html excute line by line</p>
-
-
 
 
 <p>switch stop when reaches break;</p>
@@ -376,5 +382,53 @@ Primitive(number, string...) vs reference(object):
     <li> check :defines a business rule on a column, column input validation</li>
     <li> default: have default value</li>
   </ul>
+  
+</div>
+
+
+<h3> Day 4 JAVA</h3>
+
+<div>
+  
+  
+  allocate memory in heap, object
+  within class has method will happen in stack and info about what next exec, method
+  java native stack
+  
+  why two complier? interpreter and nt complier
+  
+  runtime data area
+  
+  <ul>Data type: Primitive, Derived, User Defined
+  
+  <li> PDT: Integer -> short long int byte  (memory efficient hence different data type </li>
+  <li> PDT: Floating -> float double  </li>
+  <li> PDT: Character : char </li>
+  <li> PDT: Boolean : boolean </li>
+  <pre> 
+    byte = 8 bits -> 0 <-> 255 or signed -128 <-> 127
+    short = 2 bytes = 16 bits = -32768 <-> 32767 = 2^15 -1
+    int = 4 bytes = 32 bits = 2^31-1
+    long = 8 bytes = 64 bits = 2^63 -1
+    float = 4 bytes
+    double = 8 bytes
+    char = 2 bytes
+    boolean: undefined.
+  </pre>
+   <li> Derived data type </li>
+   
+   <pre>
+   Array, 
+   </pre>
+  
+   <h4>Rule for decalre identifier</h4>
+   <pre> 
+    naming variable: start with A-z or $ or _
+    should not use pre-defined keywords
+    
+   </pre>
+  </ul>
+  
+  
   
 </div>
