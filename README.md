@@ -162,7 +162,8 @@ Primitive(number, string...) vs reference(object):
    
    <h4>DROP - remove data, structure, and lost forever </h4>
   
-   <pre> DROP DATABASE [ IF EXISTS ] { database_name | database_snapshot_name } [ ,...n ] [;]
+   <pre>
+    DROP DATABASE [ IF EXISTS ] { database_name | database_snapshot_name } [ ,...n ] [;]
     DROP TABLE [IF EXISTS] [db_name.[schema_name | table_name] [..,n] ]
     
     Ex: 
@@ -183,6 +184,7 @@ Primitive(number, string...) vs reference(object):
    
    <h4>INSERT - add one or more row to table or view </h4>
    <p> A syntax error is raised if a column list is not provided. </p>
+   
    <pre> 
     INSERT INTO <target_table> SELECT <columns> FROM <source_table>
     
@@ -213,9 +215,10 @@ Primitive(number, string...) vs reference(object):
    </pre>
    
    
-    <h4>UPDATE - change exist data in table or view </h4>
+   <h4>UPDATE - change exist data in table or view </h4>
     
    <pre> 
+   
     UPDATE table_name
       SET
       col_name = new_val;
@@ -223,6 +226,7 @@ Primitive(number, string...) vs reference(object):
       WHERE some_col = some_val (condition)
   
    EX:
+   
     UPDATE TraineeList
       SET
       first_name = 'ben'
@@ -231,30 +235,99 @@ Primitive(number, string...) vs reference(object):
    </pre>
    
    
-    <h4>SELECT</h4>
+   <h4>SELECT</h4>
    <pre> 
+   
     SELECT select_list [ INTO new_table ]
     [ FROM table_source ] [ WHERE search_condition ]
     [ GROUP BY group_by_expression ]
     [ HAVING search_condition ]
     [ ORDER BY order_expression [ ASC | DESC ] ]
 
-
+    SELECT as Query_Result
+    WHERE colName = someVal AND|OR|NOT 
+              colName =someVal
+             
   
    EX:
+   
     SELECT e.*  
     FROM DimEmployee AS e  
     ORDER BY LastName; 
+    
+    SELECT FirstName, LastName, StartDate AS FirstDay  
+    FROM DimEmployee   
+    WHERE EndDate IS NOT NULL   
+    AND MaritalStatus = 'M'  
+    ORDER BY LastName;
+    
+    The following example uses DISTINCT to generate a list of all unique titles in the DimEmployee table:
+    
+      SELECT DISTINCT Title  
+      FROM DimEmployee  
+      ORDER BY Title;  
+    
+    The following example finds the total amount for all sales on each day:
+
+      SELECT OrderDateKey, SUM(SalesAmount) AS TotalSales  
+      FROM FactInternetSales  
+      GROUP BY OrderDateKey  
+      ORDER BY OrderDateKey;
+   
+    The following example puts the results into groups after retrieving only the rows with order dates later than August 1, 2002.
+
+      SELECT OrderDateKey, SUM(SalesAmount) AS TotalSales  
+      FROM FactInternetSales  
+      WHERE OrderDateKey > '20020801'  
+      GROUP BY OrderDateKey  
+      ORDER BY OrderDateKey;  
+   </pre>
+   
+   <h4> wild card </h4>
+   <pre>
+   'any text' -> text/string enclosed in single quotation mark
+   ^ -> NOT
+   'a%' -> starts with a
+   '%a' -> ends with a
+   '%a%' -> with a between
+   
+   Ex:
+     SELECT as QueryResults
+     WHERE colName LIKE 'a%' or LIKE '[abcde]%' or Between [1 AND 25] or IN [1,4,6,10]
    
    </pre>
    
+  <p> GROUP BY col_name -> used to group a selected set of rows into summary of rows by the value of one or more columns or expression</p>
+  <p> HAVING search_condition
    
-   
-   
+  <h4> Sub-Queries </h4>
+  <ul>
+  <li>query within another SQL query and embeded within the WHERE clause</li>
+  <li>subquery enclosed within parenthese</li>
+  <li>subquery cannot use ORDER BY, use GROUP BY instead.</li>
+  <li>subquery cannot use with BETWEEN, BUT BETWEEN use within subquery is permitted</li>
+  
+  
+  
+  <h4> Types of Joins:</h4>
+  <ul>
+  <li>	Inner join :there is a match between the columns in both tables</li>
+  <li>	Left  join: all rows from the left table (table1), with the matching rows in the right table (table2)</li>
+  <li>	Right  join: all rows from the right table (table2), with the matching rows in the right table (table1)</li>
+  <li>	Full join: returns all rows from the left table (table1) and from the right table (table2).</li>
+  <li>	Self join</li>
+  </ul>
    ####################
   table have two page, sertion page
   normailization redundency remove. 
   easy to maniputlate 
+  <h4>schema</h4>
+  <ul> 
+    <li>schema: logically group table, view  </li>
+    <li>Default schema: dbo </li>
+    <li>effective object projection tool combined with the appropriate level of user permissions.</li>
+  </ul>
+  
   
 <p>n keyword means uni-code varchar(ex: for other language </p>
 <p>varchar is 2</p>
@@ -265,11 +338,12 @@ Primitive(number, string...) vs reference(object):
   format of data, specify data type of each colum
   safer to manipulate data
   
-  check or remove duplicate from existing table
+  how to check or remove duplicate from existing table?
 
 
   view is virtual table which doesn't include actual data. we store query in view not data
-  why use view? query in it when created. user can acess the view but deny acess to the table
+  why use view? 
+  query in it when created. user can acess the view but deny acess to the table
   materialize view. (adv level
   
   insert into view 
@@ -278,19 +352,29 @@ Primitive(number, string...) vs reference(object):
   
   
   temp table in system db.
-  why use temp ?
-  do not want to change datasource, we use temp table.
-  Using a view will change data source.
-  view is not a table cannot have table property. but you can have it in temp table.
-  if there is one set of data always use it, first create but rest access. private data source, query fasater(temp table
+  <ul>
+  <h4>why use temp ?<h4>
+  <li>do not want to change datasource, we use temp table.</li>
+  <li>Using a view will change data source.</li>
+  <li>view is not a table cannot have table property. but you can have it in temp table.</li>
+  <li>if there is one set of data always use it, first create but rest access. private data source, query fasater(temp table</li>
   
-  substring, replace in sql
+  <b>substring, replace</b> in sql
   <b>date/time </b>
   
   sample 1 records,  , dulipcate 25 25
   
   scalar function not much discuss
-  always have GO
-  constraint: 6 types: primary, foreign, unique, not null, check 
+  always have GO?
+  <h4>constraint are used to specify rules for the data in a table</h4>
+
+  <ul> 
+    <li> primary </li>
+    <li> foreign : id col that referencing primary key in another table </li>
+    <li> unique</li>
+    <li> not null</li>
+    <li> check :defines a business rule on a column, column input validation</li>
+    <li> default: have default value</li>
+  </ul>
   
 </div>
