@@ -440,3 +440,73 @@ Primitive(number, string...) vs reference(object):
    use interface to represent the class first and implement in other class
    dependencies injection design pattern.
 </div>
+
+<h3> array </h3>
+array: collection of element store in continous memory
+
+ArrayList: implements List interface. Store individual obj, allow null and duplicate txt. without decalre type. Could have all. asych
+LinkedList: asychronize
+Vector: sych, allow null and duplicate
+stack: sych, null 
+treeset should have comparable object since Objects in a TreeSet are stored in a sorted and ascending order.
+treemap has order
+cursor of CF
+iterator: is an interface, element one by one, collection framework, in forward direction, remove element
+bool hasNext(), obj next, void remove
+
+Listiterator: only List class
+
+Enumeration: one by one, legacy( stack, vector, hashtable), forward direction
+
+
+
+
+
+
+
+<h4> After OT, Day 1 </h4>
+
+<div>
+  
+ <h3>SDLC</h3>
+init planning designing Dev QA Deploy maintainance 
+agile process
+PA/PO product analyst/owner(brs: business requirement being put in doc |frs: bsr turn into funciotnality )communicate with them is important
+team lead- architecture, management 
+
+client - who will use it after project
+proposal - to persua client what project like
+planning:
+proof of concept - PM to client
+
+code to commute- version control system.
+deploy: QA server, Dev server
+if its your prb, sovle it/big prb say sorry to product manager. If its not, dont say sorry. if other's problem, dont mention the name. Its team lead job. 
+
+QA testing take time. Set prioirity, if task take QA slow, do it first.
+
+
+
+<h3> agile </h3>
+sprint contain one or two important functionality 
+azure team project mgnt
+
+
+<h3> verzion collection </h3>
+leetcode to practice collection 
+
+
+cashe -> use linkedhashmap
+order is important 
+List
+heap FIFO  basically sorted queue. familiar when to use it. (when use order, priority queue
+
+Least recently user cache
+linkedhashmap implement LRU cashe (look up)
+www -> what why how
+unmodifiable collection.
+if database is changed, we refresh our cashe
+hashmap, set
+
+
+</div>
