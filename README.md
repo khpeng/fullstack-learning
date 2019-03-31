@@ -508,5 +508,44 @@ unmodifiable collection.
 if database is changed, we refresh our cashe
 hashmap, set
 
-
+in list: difference between offerFirst and addFirst
 </div>
+
+
+<>
+
+exception: runtime error, casue by human 
+error jvm failure
+Based on handling
+mandatory handling -> checked exception: those who call a method must know about the exception so they can handle
+optional handling -> unchecked exception: 
+never program should terminated abnormally 
+when exception occurs. jvm looks for handler if not then call default which terminate program abnormally
+
+catch must precceeded by try or catch block; at most one finally block
+if multiple catch block. exception must in order of child to parent.
+
+BufferedInputStream expect file input stream as input.
+BufferedInputStream not able to load file only read file.
+controller layer for exception handle
+
+
+thread pices of code execute seperately
+static method use by calling the class name
+there is always a default thread (main thread)created by JVM
+
+
+to create thread:
+create a subclass to thread class
+1.class MyClass extends Thread{}
+2. public void run()  -> always override when using a thread
+3.Myclass mc = new MyClass();
+4. Thread t = new Thread(mc) attach class to thread
+5. t.start()
+
+implement runable:
+1. implement runable
+2. public void run
+3. MyRunable mr = new MyRunable()
+4. thread t = new Thread(mr)
+5. t.start();
