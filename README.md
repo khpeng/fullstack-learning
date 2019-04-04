@@ -95,8 +95,8 @@ Primitive(number, string...) vs reference(object):
  what is prototype? to use for inheritance. because js is not oop. 
  
  CRUD
- get -> read 
- post -> create 
+ get -> read -> no body. Has size limit. will expose url. If someone knows the header
+ post -> create  - will have body and match object in java object. safer. won't show any url. it's in body
  put -> update
  delete -> d
  
@@ -416,6 +416,10 @@ Primitive(number, string...) vs reference(object):
     char = 2 bytes
     boolean: undefined.
     primitive type store in stack
+    
+    Integer i = new Integer(2131);
+    Character cr = new Character('J');
+    A primitive wrapper class is a wrapper class that <b>encapsulates, hides or wraps data types</b> from the eight primitive data types,
   </pre>
    <li> Derived data type </li>
    
@@ -433,15 +437,27 @@ Primitive(number, string...) vs reference(object):
     
    </pre>
   
+
+  
+  
+  
    STATIC BINDING -> OVERLOADING
    interface solve multiple inheritance sicne if a class and b class both have drive() and class c extends a,b then ambiguity to use drive() but interface have no behavior so will not confused.
    
    interface work as method classifier.
    use interface to represent the class first and implement in other class
    dependencies injection design pattern.
+   
+   Interface can <b>extends</b> multiple interfaces.
 </div>
 
+
 <h3> array </h3>
+
+<pre> 
+    int x[] = new int[5];
+    int y[] = {2001, 2002, 2003, 2004, 2005, 2006}; 
+    
 array: collection of element store in continous memory
 
 ArrayList: implements List interface. Store individual obj, allow null and duplicate txt. without decalre type. Could have all. asych
@@ -458,7 +474,7 @@ Listiterator: only List class
 
 Enumeration: one by one, legacy( stack, vector, hashtable), forward direction
 
-
+</pre>
 
 
 
@@ -513,6 +529,7 @@ in list: difference between offerFirst and addFirst
 
 
 <>
+To define own exception, we can extends Exception class.
 
 exception: runtime error, casue by human 
 error jvm failure
@@ -520,7 +537,7 @@ Based on handling
 mandatory handling -> checked exception: those who call a method must know about the exception so they can handle
 optional handling -> unchecked exception: 
 never program should terminated abnormally 
-when exception occurs. jvm looks for handler if not then call default which terminate program abnormally
+when exception occurs. jvm looks for handler if not found, then call default handler which terminate program abnormally
 
 catch must precceeded by try or catch block; at most one finally block
 if multiple catch block. exception must in order of child to parent.
@@ -549,3 +566,46 @@ implement runable:
 3. MyRunable mr = new MyRunable()
 4. thread t = new Thread(mr)
 5. t.start();
+
+protocol version -> status code -> status msg DatabaseMetaData
+
+http 
+1xx -information 
+2xx -sucess 
+3xx -redirection
+4xx - resouece not found
+5xx - problem while executing resouce
+
+first name of app then src and web-inf folder
+xml should in web-inf folder also lib and classes folder
+xml everything represent as element
+you can write any number of element but only one root element
+<web-app> </> -> root element
+  
+  
+ blog contains info about xml  
+ create new dynamic web project
+header ]
+
+
+configure tomcat to ide
+type of servlet
+
+servlet two type name and class
+  always extends hhtpservelt
+  
+  servelet configure, context and itself. 3 Object created.
+  
+  
+  store user login detail in session. Stateful the time good for validate. -> Stateful
+  Nowdays, we just JWT, jason web token. pass encrypt string around. -> Stateless
+  
+  Eclipse: 
+  command shift R, command L.
+  call hierarchy -> which method you call
+  type hierarchy -> tracking implements, extends, and inheritant. use in dependecy injection, interface in spring.
+  show annotation -> who/when modify the code,
+  debug in eclipse : expression,
+  working set -> deselect to hide other project.
+  
+  
