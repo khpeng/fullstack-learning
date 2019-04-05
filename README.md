@@ -632,3 +632,41 @@ servlet two type name and class
    Hibernate exception.
    
    hibernate criteria method vs HQL -> you will know if there is logical error when you use criteria method. HQL will know until if send to db.
+
+
+  
+MVC architecture:
+  View: jsp, html, css
+  Controller: servlet
+  Model: jdbc
+  
+  fetching data in controller layer
+  
+  java app -> hib -> jdbc api -> db
+  jdbc comunicate to any db with same logic. but different dbs will execute different query.
+  
+  feature of hibernet: 
+  1.dont worry about query in sepcific format. HQL hibernet query language.
+  2. auto tables creation
+  3. generator
+  4. object relational mapping
+  5. no need to handle exception
+  
+  to create hibernet class
+  entity class
+  mapping file
+  configuration file
+  DAO class
+  
+  go to hibernet site and download jar
+  
+ Step to develop hib app:
+ develop entity class for each table
+ each entity creaty mapping file
+ develop configuration file 
+ jars are added and class path is set make sure hib framework able to perform persistent operation.
+ 
+ How to make sure  hib framework able to perform persistent logic?
+ 1. configuration 
+    Configuration cfg = new Configuration()
+    cfg.configure()
