@@ -670,3 +670,6 @@ MVC architecture:
  1. configuration 
     Configuration cfg = new Configuration()
     cfg.configure()
+
+webservice 
+interoperable distributed application
