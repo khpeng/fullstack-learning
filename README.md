@@ -609,3 +609,26 @@ servlet two type name and class
   working set -> deselect to hide other project.
   
   
+  hibernate vs jdbc 
+  depend on its situiation.
+  
+  Hibernate workflow 
+  
+  
+  states of enttiy hibernate: transient, persistent, detached, or removed. -> until it comit, things in persistent state will not in db.
+  what is hibernate use for? Objet Relational mismatch, minimize code change (ex. jdbc will need to change all query if added one column in db), lazy loading.
+  
+   junction tables
+  <h4> Get familiar 1-n n-n relationship SQL knowldege </h4> 
+
+   Hibernate method: https://www.baeldung.com/hibernate-save-persist-update-merge-saveorupdate
+   
+   Save transient to persitent, return an ID
+   persist: transient to presisten but not save to db
+   update: detached to persistent
+   merge: transient to persistent
+   
+   
+   Hibernate exception.
+   
+   hibernate criteria method vs HQL -> you will know if there is logical error when you use criteria method. HQL will know until if send to db.
