@@ -673,3 +673,26 @@ MVC architecture:
 
 webservice 
 interoperable distributed application
+
+
+Monolithic:
+Too large to understand 
+Configuration is hard
+ Bug fix is hard
+ Redeploy whole app for each update 
+Hard to scale
+
+Authentication Server:
+Stateful vs Stateless
+Auth Server
+Generate JWT
+Validate JWT
+Single sign on
+
+Dispatch request from overall entry point
+gateway
+Spring cloud config
+Generate JWT and validate from google not by ourselves.
+
+
+microservice architectrure 
