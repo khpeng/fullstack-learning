@@ -696,3 +696,8 @@ Generate JWT and validate from google not by ourselves.
 
 
 microservice architectrure 
+Advance Topic
+monitor the status of service
+centralize and analysis logs: elastricsearch, kibana,
+container based deploy:docker
+CI/CD continuos integration/ Delivery: Jenkins, Kubernetes
