@@ -789,9 +789,8 @@ CI/CD continuos integration/ Delivery: Jenkins, Kubernetes
        after() - Inserts content after the selected elements
        before() - Inserts content before the selected elements
   </pre>
-  
-        <h3>Typescript</h3>
-      <ul>
+  <h3>Typescript</h3>
+   <ul>
         <li><b>superset of JavaScript that compiles to plain JavaScript. It’s not a replacement for JavaScript, nor does it add any new features to JavaScript code.</b></li>
           <li><b>TypeScript allows programmers to use object-oriented constructs in their code, which is then translated to JavaScript.</b></li>
           <li><b>TypeScript supports definition files that can contain type information of existing JavaScript libraries.</b></li>
@@ -828,5 +827,7 @@ CI/CD continuos integration/ Delivery: Jenkins, Kubernetes
             let sentence: string = `my name is ${fullname}`;
           <b>Array</b>
             let list: number[] = [1, 2, 3];
-            generic type: let list : Array<number>  = [1,2,3];
+            generic type: let list : Array<number>  = [1,2,3]
       </pre>
+  
+
