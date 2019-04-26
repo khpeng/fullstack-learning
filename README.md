@@ -701,3 +701,91 @@ monitor the status of service
 centralize and analysis logs: elastricsearch, kibana,
 container based deploy:docker
 CI/CD continuos integration/ Delivery: Jenkins, Kubernetes
+
+
+  <h1>Front-End</h1>
+  <h3>Jquery</h3>
+  <pre>
+    Jquery: Write less, do more, simplified things in JS via AJAX calls and DOM manipulation
+    Jquery Libary contains:
+     HTML/DOM manipulation
+     CSS manipulation
+     HTML event methods
+     Effects and animations
+     AJAX
+     Utilities
+  </pre>
+  <h3> Syntax</h3>
+  <pre>
+    Example:
+      $(this).hide() - hides the current element.
+      $("p").hide() - hides all <p> elements.
+      $(".test").hide() - hides all elements with class="test".
+      $("#test").hide() - hides the element with id="test".
+
+  </pre>
+  <p><b>document.ready</b>to prevent any jQuery code from running before the document is finished loading (is ready).<br>
+  allows you to have your JavaScript code before the body of your document, in the head section.</p>
+
+  <h3>Common Event</h3>
+  <pre>Mouse Events             Keyboard Events        From Events        Document Window Events
+       click                      keypress              submit                load
+       dblclick                   keydown               change                resize
+       mouseenter                 keyup                 focus                 scroll
+       mouseleave                                        blur                 unload
+  </pre>
+
+
+  <h3>Traversal</h3>
+  <pre>
+    Traversing in jQuery is the act of moving through DOM elements based on hierarchical relationships to one another.
+    This allows you to move through DOM elements based on child, parent, or sibling relationships.</pre>
+
+  <h3>Ajax</h3>
+  <ul>
+    <li>AJAX stands for Asynchronous JavaScript and XML</li>
+    <li>AJAX allows us to retrieve, update, delete, and add data and display it without reloading the webpage.</li>
+    <li>jQuery has it’s own AJAX methods to GET and POST and retrieve text, HTML, JSON, or XML from a remote server.</li>
+  </ul>
+
+  <p> <b>jQuery Serialization</b>: Use in form to create standard url-encoded notation <br>
+     <b>SerializeArray: </b>[ {name: Robert, job: junior developer}, {name:Bhumi, job: senior developer} ]
+  </p>
+  
+  <pre>
+    $(selector).fadeIn(speed, callback);
+    $(selector).fadeOut(speed, callback);
+    $(selector).fadeToggle(speed, callback);
+    $(selector).fadeTo(speed, opacity, callback);
+    $("button").click(function(){
+      $("div").animate({left: '250px'});
+      });
+    $(selector).animate({params},speed,callback);
+    $(selector).stop(stopAll, gotoEnd); stop() method is used to stop an animation or effect before it is finished.
+
+    <b>jQuery Method Chaining</b> allows us to run multiple jQuery commands, one after the other, on the same element(s).
+    $("#p1").css("color", "red")
+        .slideUp(2000)
+        .slideDown(2000);
+
+     <b>Get Content – text(), html() and val()</b>
+       text() - Sets or returns the text content of selected elements
+       html() - Sets or returns the content of selected elements (including HTML markup)
+       val() - Sets or returns the value of form fields
+
+       $("#btn1").click(function(){
+        $("#test1").text("Hello world!");
+        });
+        $("#btn2").click(function(){
+        $("#test2").html("<b>Hello world!</b>");
+        });
+        $("#btn3").click(function(){
+        $("#test3").val(“Hello");
+       });
+
+       <b>jQuery - Add Elements</b>
+       append() - Inserts content at the end of the selected elements
+       prepend() - Inserts content at the beginning of the selected elements
+       after() - Inserts content after the selected elements
+       before() - Inserts content before the selected elements
+  </pre>
