@@ -789,3 +789,44 @@ CI/CD continuos integration/ Delivery: Jenkins, Kubernetes
        after() - Inserts content after the selected elements
        before() - Inserts content before the selected elements
   </pre>
+  
+        <h3>Typescript</h3>
+      <ul>
+        <li><b>superset of JavaScript that compiles to plain JavaScript. It’s not a replacement for JavaScript, nor does it add any new features to JavaScript code.</b></li>
+          <li><b>TypeScript allows programmers to use object-oriented constructs in their code, which is then translated to JavaScript.</b></li>
+          <li><b>TypeScript supports definition files that can contain type information of existing JavaScript libraries.</b></li>
+          <li>Staic Typing </li>
+          <li><b>Compilation</b> - TypeScript compiles your code before execution and let
+              you know about compilation errors like syntax errors and mismatch
+              datatypes etc. Compilation is very useful when we have to write large
+              JavaScript programs.</li>
+          <li><b>OOPS features</b> like classes, interfaces, inheritance, generics and access modifiers like public and private variables.</li>
+          <li><b>Support for Modules</b> - TypeScript uses Module system. A module is a
+              container of objects. An object in a module is not available to outside
+              world until you export them. You can import other modules and use
+              their objects in your module. Module helps us to write maintainable
+              code.</li>
+          <li><b>Integration with popular JavaScript libraries using Declaration Files</b> -
+              TypeScript allows you to use other popular JavaScript libraries like
+              jQuery to use within TypeScript code.</li>
+      </ul>
+      <h3>Variable Declaration</h3>
+      <pre>
+          <b>number, string, Boolean, any, object type.</b>
+          var name : string = “mary”;
+          var name : string;
+          <b>Declare its value but no type. The variable type will be set to any.</b>
+            var name = “mary”;
+            var name;
+            let isDone: boolean = false;
+            var isDisable: boolean = true;
+            isDisable = false;
+          <b>TypeScript also uses double quotes (") or single quotes (') to surround string data.</b>
+            let color: string = 'A'
+          <b>template strings</b> which can span multiple lines and have embedded expressions. <b>`` symbol</b>
+            let fullname: string =  `John`
+            let sentence: string = `my name is ${fullname}`;
+          <b>Array</b>
+            let list: number[] = [1, 2, 3];
+            generic type: let list : Array<number>  = [1,2,3];
+      </pre>
